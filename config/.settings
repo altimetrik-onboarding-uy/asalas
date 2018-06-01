@@ -1,0 +1,24 @@
+{
+    "projectName": "Bloggist",
+    "username": "admin@txileno.com",
+    "id": "f81133d0-650c-11e8-be01-e9df9a5a1063",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na59.salesforce.com",
+    "workspace": "C:\\Users\\asalas\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "AuraDefinitionBundle",
+        "CustomApplication",
+        "CustomObject",
+        "Flow",
+        "FlowDefinition",
+        "Layout",
+        "StaticResource",
+        "Workflow"
+    ]
+}
