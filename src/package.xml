@@ -17,8 +17,26 @@
         <name>ApexTrigger</name>
     </types>
     <types>
+        <members>Bloggist</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Bloggist</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Contact</members>
+        <members>Post__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Contact-Contact Layout</members>
+        <members>Post__c-Post Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
         <members>*</members>
         <name>StaticResource</name>
     </types>
-    <version>36.0</version>
+    <version>42.0</version>
 </Package>
