@@ -1,0 +1,8 @@
+The post {!Post__c.Name} with ID {!Post__c.Id} is asking for review, please check this to continue the Post Publishing Process. 
+
+To review the request follow this link:
+{!ApprovalRequest.Internal_URL}
+
+You can check more details about this Post in:
+
+{!Post__c.Link}

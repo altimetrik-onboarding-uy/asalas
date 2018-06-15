@@ -30,13 +30,44 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>unfiled$public/Post_Under_Review_Aapproval</members>
+        <members>unfiled$public/Post_review_Rejected</members>
+        <members>unfiled$public/Post_to_be_Verified_1528746894529</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlowDefinition</name>
+    </types>
+    <types>
         <members>Contact-Contact Layout</members>
         <members>Post__c-Post Layout</members>
         <name>Layout</name>
     </types>
     <types>
         <members>*</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Standard</members>
+        <members>StandardAul</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Post__c</members>
+        <name>Workflow</name>
     </types>
     <version>42.0</version>
 </Package>

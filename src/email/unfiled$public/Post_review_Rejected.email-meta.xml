@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification for Post review Rejected</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Post Review Rejected</name>
+    <style>none</style>
+    <subject>Your post {!Post__c.Name}, sadly was not approved</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

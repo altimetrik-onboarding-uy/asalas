@@ -182,13 +182,6 @@
             "xmlName": "AnalyticSnapshot"
         },
         {
-            "directoryName": "feedFilters",
-            "inFolder": false,
-            "metaFile": false,
-            "suffix": "feedFilter",
-            "xmlName": "CustomFeedFilter"
-        },
-        {
             "directoryName": "layouts",
             "inFolder": false,
             "metaFile": false,
@@ -344,13 +337,6 @@
             "metaFile": false,
             "suffix": "escalationRules",
             "xmlName": "EscalationRules"
-        },
-        {
-            "directoryName": "postTemplates",
-            "inFolder": false,
-            "metaFile": false,
-            "suffix": "postTemplate",
-            "xmlName": "PostTemplate"
         },
         {
             "directoryName": "approvalProcesses",
@@ -612,6 +598,20 @@
             "xmlName": "BrandingSet"
         },
         {
+            "directoryName": "flowCategories",
+            "inFolder": false,
+            "metaFile": false,
+            "suffix": "flowCategory",
+            "xmlName": "FlowCategory"
+        },
+        {
+            "directoryName": "lightningBolts",
+            "inFolder": false,
+            "metaFile": false,
+            "suffix": "lightningBolt",
+            "xmlName": "LightningBolt"
+        },
+        {
             "directoryName": "lightningExperienceThemes",
             "inFolder": false,
             "metaFile": false,
@@ -673,13 +673,6 @@
             "metaFile": false,
             "suffix": "cachePartition",
             "xmlName": "PlatformCachePartition"
-        },
-        {
-            "directoryName": "assistantRecommendationTypes",
-            "inFolder": false,
-            "metaFile": false,
-            "suffix": "assistantRecommendationType",
-            "xmlName": "AssistantRecommendationType"
         },
         {
             "directoryName": "topicsForObjects",
