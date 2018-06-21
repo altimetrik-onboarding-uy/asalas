@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent went an user wants a review for it post</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Post to be Verified</name>
+    <relatedEntityType>Post__c</relatedEntityType>
+    <style>none</style>
+    <subject>This is an email from {userName}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

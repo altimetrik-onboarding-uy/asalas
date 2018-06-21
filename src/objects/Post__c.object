@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>elements contained for Bloggist Post</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Content__c</fullName>
+        <externalId>false</externalId>
+        <label>Content</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>30</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Published_Date__c</fullName>
+        <description>published date, is defined after been approved by the admin, and published by the post author</description>
+        <externalId>false</externalId>
+        <label>Published Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Under Review</fullName>
+                    <default>false</default>
+                    <label>Under Review</label>
+                </value>
+                <value>
+                    <fullName>Ready</fullName>
+                    <default>false</default>
+                    <label>Ready</label>
+                </value>
+                <value>
+                    <fullName>Published</fullName>
+                    <default>false</default>
+                    <label>Published</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tags__c</fullName>
+        <externalId>false</externalId>
+        <label>Tags</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Writer__c</fullName>
+        <description>this should be the list of contacts already defined in contacts section/tab</description>
+        <externalId>false</externalId>
+        <label>Writer</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Posts</relationshipLabel>
+        <relationshipName>Posts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <gender>Masculine</gender>
+    <label>Post</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Post Title</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Posts</pluralLabel>
+    <recordTypes>
+        <fullName>qw3www</fullName>
+        <active>true</active>
+        <description>Creation of the Post and ask for Review setting</description>
+        <label>Post Creation</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields xsi:nil="true"/>
+        <searchResultsAdditionalFields>Published_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Tags__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Draft_to_Under_Review</fullName>
+        <active>true</active>
+        <description>If the Post is set in Draft, it new Status can only be Under Review</description>
+        <errorConditionFormula>AND(
+  NOT( ISNEW() ),
+  ISPICKVAL(PRIORVALUE(Status__c), &quot;Draft&quot;),
+  NOT(ISPICKVAL(Status__c, &quot;Under Review&quot;))
+)</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Before approval, Only possible Value for Status is Draft or Under Review</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Editing_Publish_post</fullName>
+        <active>true</active>
+        <description>If post is already published, it should go under review for approval</description>
+        <errorConditionFormula>AND(
+    NOT( ISNEW() ),
+    NOT(ISCHANGED(Status__c)),
+    ISPICKVAL(Status__c, &quot;Published&quot;),
+    OR(
+    ISCHANGED(Content__c),
+    ISCHANGED(Name),
+    ISCHANGED(Tags__c)
+    )
+  )</errorConditionFormula>
+        <errorMessage>Post published can&apos;t be edited without a Review, Please change to &quot;Under Review&quot; Status for approval</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Ready_to_be_Published</fullName>
+        <active>true</active>
+        <description>If the Post was Approved, now it can be published, but if there is any new modification everywhere (but publish date)</description>
+        <errorConditionFormula>AND(
+    NOT( ISNEW() ),
+    ISCHANGED(Status__c),
+    ISPICKVAL(PRIORVALUE(Status__c), &quot;Ready&quot;),
+    ISPICKVAL(Status__c, &quot;Published&quot;),
+    OR(
+    ISCHANGED(Content__c),
+    ISCHANGED(Name),
+    ISCHANGED(Tags__c)
+    )
+  )</errorConditionFormula>
+        <errorMessage>You can&apos;t Publish a Post if it has changes without review approval, please change the Status to &quot;Under Review&quot; for a new approval process</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Status_Draft_Only</fullName>
+        <active>true</active>
+        <description>Whenever a post is created, only Draft will be accepted</description>
+        <errorConditionFormula>AND(
+     ISNEW(),
+     NOT(ISPICKVAL( Status__c , &quot;Draft&quot;))
+   )</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>Only Draft is accepted as Status when Post Is created</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>
