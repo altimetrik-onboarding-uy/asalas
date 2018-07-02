@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>*</members>
+        <members>PostRecords</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -17,7 +17,14 @@
         <name>ApexTrigger</name>
     </types>
     <types>
+        <members>*</members>
+        <name>ApprovalProcess</name>
+    </types>
+    <types>
         <members>Bloggist</members>
+        <members>Markdown_Preview</members>
+        <members>Publish_Post</members>
+        <members>Submit_Post</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
@@ -34,6 +41,7 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>unfiled$public/Post_Review_Approved</members>
         <members>unfiled$public/Post_Under_Review_Aapproval</members>
         <members>unfiled$public/Post_review_Rejected</members>
         <members>unfiled$public/Post_to_be_Verified_1528746894529</members>
@@ -42,6 +50,10 @@
     <types>
         <members>*</members>
         <name>Flow</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>FlowCategory</name>
     </types>
     <types>
         <members>*</members>

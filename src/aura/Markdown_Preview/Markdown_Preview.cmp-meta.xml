@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>43.0</apiVersion>
+    <description>it will reflect the content of a particular text area and if it has markdown it will accept it and transform it into html format</description>
+</AuraDefinitionBundle>

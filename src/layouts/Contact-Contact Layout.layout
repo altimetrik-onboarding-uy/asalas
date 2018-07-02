@@ -370,6 +370,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Published_Date__c</fields>
         <relatedList>Post__c.Writer__c</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>

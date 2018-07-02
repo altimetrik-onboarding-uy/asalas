@@ -1,0 +1,12 @@
+.THIS .redText{
+  color: #CA3433;
+}
+.THIS .smallText{
+  font-size: 0.8em;
+}
+.THIS .italicText{
+  font-style: italic;
+}
+.THIS .slds-textarea{
+  height: 200px;
+}

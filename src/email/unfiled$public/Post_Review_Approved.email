@@ -1,0 +1,3 @@
+Your post {!Post__c.Name} was approved! and now you can publish it changing the status to "Published", to be able to change log into your SalesForce account and changed it going to the post, or follow this link:
+
+{!Post__c.Link}
