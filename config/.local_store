@@ -376,15 +376,17 @@
         "mmState": "clean"
     },
     "PostRecords.cls": {
-        "createdById": "005f4000002ZRTbAAO",
-        "createdByName": "Angel Salas",
-        "createdDate": "2018-06-21T14:39:31.000Z",
-        "fileName": "unpackaged/classes/PostRecords.cls",
-        "fullName": "PostRecords",
         "id": "01pf400000HF9wHAAT",
+        "name": "PostRecords",
+        "createdDate": "2018-06-21T14:39:31.000+0000",
+        "createdById": "005f4000002ZRTbAAO",
+        "namespacePrefix": null,
         "lastModifiedById": "005f4000002ZRTbAAO",
+        "lastModifiedDate": "2018-07-03T14:16:26.000+0000",
+        "fullName": "PostRecords",
+        "fileName": "unpackaged/classes/PostRecords.cls",
+        "createdByName": "Angel Salas",
         "lastModifiedByName": "Angel Salas",
-        "lastModifiedDate": "2018-07-02T17:27:37.000Z",
         "manageableState": "unmanaged",
         "type": "ApexClass",
         "mmState": "clean"

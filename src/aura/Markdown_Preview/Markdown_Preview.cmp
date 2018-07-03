@@ -11,9 +11,9 @@
     <header class="slds-modal__header">
         <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Markdown Preview</h2>
     </header>
-    <div class="slds-grid slds-gutters"  id="modal-content-preview">
+    <div class="slds-grid slds-gutters">
       <div class="slds-col slds-size_6-of-12">
-          <h2 class="italicText">Write the content for your post: {!v.intervalId}</h2>
+          <h2 class="italicText">Write the content for your post:</h2>
           <lightning:textarea aura:id="formTextArea" onchange="{!c.onTextChange}" onfocus="{!c.onFocusSave}"  onfocusout="{!c.onFocusOut}" rows="5" value=" "/>
           <p class= "redText smallText">{!v.saved}</p>
       </div>
@@ -25,6 +25,5 @@
           </div>
       </div>
     </div>
-
   </div>
 </aura:component>

@@ -8,16 +8,21 @@ public with sharing class PostRecords {
     }
 
   @AuraEnabled
-  public static void autoSave(String recordId, String recordContent) {
-    try{
-      Post__c post= [Select Status__c From Post__c Where id = :recordId];
+  public static String autoSave(String recordId, String recordContent) {
+    String status = '';
 
-      post.Content__c = recordContent;
-      update post;
+    try{
+      Post__c post= [Select Content__c,Status__c From Post__c Where id = :recordId];
+      status = post.Status__c;
+      if (post.Status__c == 'Draft'){
+        post.Content__c = recordContent;
+        update post;
+      }
     }
     catch(exception e){
       system.debug ('submitPost didn\'t complete, and the reason is: '+e);
     }
+    return status;
   }
 
   @AuraEnabled

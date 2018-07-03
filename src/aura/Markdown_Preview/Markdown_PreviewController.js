@@ -31,8 +31,7 @@
   },
 	onFocusSave: function (component, event, helper){
 		var recordId = component.get("v.recordId");
-		var recordContent = component.find("formTextArea").get("v.value");
-		helper.save(component, event, recordId, recordContent);
+		helper.save(component, event, recordId);
 	},
 	onFocusOut: function(component, event, helper){
 		var intervalId = component.get("v.intervalId");
