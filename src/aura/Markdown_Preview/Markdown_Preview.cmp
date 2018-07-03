@@ -1,0 +1,29 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId, force:appHostable" access="global" controller="PostRecords">
+  <ltng:require scripts="{!$Resource.Markedown}" />
+  <aura:attribute name="markdownPreview" type="String"/>
+  <aura:attribute name="formTextArea" type="String"/>
+  <aura:attribute name="saved" type="String" default="" />
+  <aura:attribute name="intervalId" type="String" default="" />
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+  <div class="markdownContainer">
+
+    <header class="slds-modal__header">
+        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Markdown Preview</h2>
+    </header>
+    <div class="slds-grid slds-gutters">
+      <div class="slds-col slds-size_6-of-12">
+          <h2 class="italicText">Write the content for your post:</h2>
+          <lightning:textarea aura:id="formTextArea" onchange="{!c.onTextChange}" onfocus="{!c.onFocusSave}"  onfocusout="{!c.onFocusOut}" rows="5" value=" "/>
+          <p class= "redText smallText">{!v.saved}</p>
+      </div>
+      <div class="slds-col slds-size_6-of-12">
+          <h2>Preview</h2>
+          <label class="slds-form-element__label"></label>
+          <div class="unescapedHtmlBorder">
+              <aura:unescapedHtml value="{!v.markdownPreview}"/>
+          </div>
+      </div>
+    </div>
+  </div>
+</aura:component>

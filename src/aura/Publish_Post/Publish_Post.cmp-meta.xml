@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>43.0</apiVersion>
+    <description>If the Post only changed it status from Ready to Published. It will be saved as it is, and an approval notification will show up 
+
+If not, it will change  into Under Review to start over the approval process and a negative message will show up</description>
+</AuraDefinitionBundle>

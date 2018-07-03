@@ -6,7 +6,7 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>TestDataFactory</apexClass>
+        <apexClass>PostRecords</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <custom>false</custom>
