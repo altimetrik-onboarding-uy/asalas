@@ -29,8 +29,9 @@
 			}
 
   },
-	onFocusSave: function (component, event, helper){
+	onFocus: function (component, event, helper){
 		var recordId = component.get("v.recordId");
+		helper.shortCuts(component, event);
 		helper.save(component, event, recordId);
 	},
 	onFocusOut: function(component, event, helper){
