@@ -14,11 +14,11 @@
     <div class="slds-grid slds-gutters">
       <div class="slds-col slds-size_6-of-12">
           <h2 class="italicText">Write the content for your post:</h2>
-          <lightning:textarea aura:id="formTextArea" onchange="{!c.onTextChange}" onfocus="{!c.onFocus}"  onfocusout="{!c.onFocusOut}" rows="5" value=" "/>
+          <lightning:textarea aura:id="formTextArea" onchange="{!c.onTextChange}" onfocus="{!c.onFocus}"  onfocusout="{!c.onFocusOut}" value=" "/>
           <p class= "redText smallText">{!v.saved}</p>
       </div>
       <div class="slds-col slds-size_6-of-12">
-          <h2>Preview</h2>
+          <h2 class="italicText">Preview</h2>
           <label class="slds-form-element__label"></label>
           <div class="unescapedHtmlBorder">
               <aura:unescapedHtml value="{!v.markdownPreview}"/>
