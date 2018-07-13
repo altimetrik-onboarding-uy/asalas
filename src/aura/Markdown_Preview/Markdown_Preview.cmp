@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId, force:appHostable" access="global" controller="PostRecords">
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:appHostable" access="global" controller="PostRecords">
   <ltng:require scripts="{!$Resource.Markedown}" />
   <aura:attribute name="markdownPreview" type="String"/>
   <aura:attribute name="formTextArea" type="String"/>
