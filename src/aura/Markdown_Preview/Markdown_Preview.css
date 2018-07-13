@@ -10,3 +10,10 @@
 .THIS .slds-textarea{
   height: 200px;
 }
+.THIS #recordContent{
+  width: 100%;
+}
+.THIS .margin-vertical-15{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

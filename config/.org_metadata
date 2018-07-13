@@ -23,13 +23,57 @@
             {
                 "createdById": "005f4000002ZRTbAAO",
                 "createdByName": "Angel Salas",
+                "createdDate": "2018-07-06T13:15:36.000Z",
+                "fileName": "classes/PostEmailNotificationBatch.cls",
+                "fullName": "PostEmailNotificationBatch",
+                "id": "ApexClass.PostEmailNotificationBatch",
+                "lastModifiedById": "005f4000002ZRTbAAO",
+                "lastModifiedByName": "Angel Salas",
+                "lastModifiedDate": "2018-07-13T17:24:33.000Z",
+                "manageableState": "unmanaged",
+                "type": "ApexClass",
+                "leaf": true,
+                "title": "PostEmailNotificationBatch",
+                "checked": false,
+                "text": "PostEmailNotificationBatch",
+                "cls": "",
+                "level": 2,
+                "isFolder": false,
+                "children": [],
+                "select": false
+            },
+            {
+                "createdById": "005f4000002ZRTbAAO",
+                "createdByName": "Angel Salas",
+                "createdDate": "2018-07-06T13:15:17.000Z",
+                "fileName": "classes/PostEmailNotificationSchedule.cls",
+                "fullName": "PostEmailNotificationSchedule",
+                "id": "ApexClass.PostEmailNotificationSchedule",
+                "lastModifiedById": "005f4000002ZRTbAAO",
+                "lastModifiedByName": "Angel Salas",
+                "lastModifiedDate": "2018-07-12T19:46:54.000Z",
+                "manageableState": "unmanaged",
+                "type": "ApexClass",
+                "leaf": true,
+                "title": "PostEmailNotificationSchedule",
+                "checked": false,
+                "text": "PostEmailNotificationSchedule",
+                "cls": "",
+                "level": 2,
+                "isFolder": false,
+                "children": [],
+                "select": false
+            },
+            {
+                "createdById": "005f4000002ZRTbAAO",
+                "createdByName": "Angel Salas",
                 "createdDate": "2018-06-21T14:39:31.000Z",
                 "fileName": "classes/PostRecords.cls",
                 "fullName": "PostRecords",
                 "id": "ApexClass.PostRecords",
                 "lastModifiedById": "005f4000002ZRTbAAO",
                 "lastModifiedByName": "Angel Salas",
-                "lastModifiedDate": "2018-07-02T17:27:37.000Z",
+                "lastModifiedDate": "2018-07-03T14:16:26.000Z",
                 "manageableState": "unmanaged",
                 "type": "ApexClass",
                 "leaf": true,
@@ -229,7 +273,7 @@
                 "id": "ApprovalProcess.Post__c.Under_Review_Approval",
                 "lastModifiedById": "005f4000002ZRTbAAO",
                 "lastModifiedByName": "Angel Salas",
-                "lastModifiedDate": "2018-06-22T18:31:55.000Z",
+                "lastModifiedDate": "2018-07-04T20:02:56.000Z",
                 "type": "ApprovalProcess",
                 "leaf": true,
                 "title": "Post__c.Under_Review_Approval",
@@ -364,7 +408,7 @@
                 "id": "AuraDefinitionBundle.Markdown_Preview",
                 "lastModifiedById": "005f4000002ZRTbAAO",
                 "lastModifiedByName": "Angel Salas",
-                "lastModifiedDate": "2018-07-02T18:28:26.000Z",
+                "lastModifiedDate": "2018-07-05T12:39:56.000Z",
                 "manageableState": "unmanaged",
                 "type": "AuraDefinitionBundle",
                 "leaf": true,
@@ -14054,12 +14098,72 @@
                 "children": [
                     {
                         "leaf": true,
+                        "title": "Post_Under_Review_Aapproval",
+                        "checked": false,
+                        "text": "Post_Under_Review_Aapproval",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.Post_Under_Review_Aapproval",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
                         "title": "MarketingProductInquiryResponse",
                         "checked": false,
                         "text": "MarketingProductInquiryResponse",
                         "level": 3,
                         "isFolder": false,
                         "id": "EmailTemplate.unfiled$public.MarketingProductInquiryResponse",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
+                        "title": "SupportEscalatedCaseNotification",
+                        "checked": false,
+                        "text": "SupportEscalatedCaseNotification",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.SupportEscalatedCaseNotification",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
+                        "title": "SupportCaseAssignmentNotification",
+                        "checked": false,
+                        "text": "SupportCaseAssignmentNotification",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.SupportCaseAssignmentNotification",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
+                        "title": "SupportCaseCreatedWebInquiries",
+                        "checked": false,
+                        "text": "SupportCaseCreatedWebInquiries",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.SupportCaseCreatedWebInquiries",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
+                        "title": "SupportCaseResponse",
+                        "checked": false,
+                        "text": "SupportCaseResponse",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.SupportCaseResponse",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
+                        "title": "Post_Review_Approved",
+                        "checked": false,
+                        "text": "Post_Review_Approved",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.Post_Review_Approved",
                         "select": false
                     },
                     {
@@ -14084,26 +14188,6 @@
                     },
                     {
                         "leaf": true,
-                        "title": "Post_review_Rejected",
-                        "checked": false,
-                        "text": "Post_review_Rejected",
-                        "level": 3,
-                        "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.Post_review_Rejected",
-                        "select": false
-                    },
-                    {
-                        "leaf": true,
-                        "title": "SUPPORTSelfServiceNewUserLoginInformationSAMPLE",
-                        "checked": false,
-                        "text": "SUPPORTSelfServiceNewUserLoginInformationSAMPLE",
-                        "level": 3,
-                        "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.SUPPORTSelfServiceNewUserLoginInformationSAMPLE",
-                        "select": false
-                    },
-                    {
-                        "leaf": true,
                         "title": "SupportEscalatedCaseReassignment",
                         "checked": false,
                         "text": "SupportEscalatedCaseReassignment",
@@ -14114,32 +14198,12 @@
                     },
                     {
                         "leaf": true,
-                        "title": "SupportCaseAssignmentNotification",
+                        "title": "Post_review_Rejected",
                         "checked": false,
-                        "text": "SupportCaseAssignmentNotification",
+                        "text": "Post_review_Rejected",
                         "level": 3,
                         "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.SupportCaseAssignmentNotification",
-                        "select": false
-                    },
-                    {
-                        "leaf": true,
-                        "title": "SupportEscalatedCaseNotification",
-                        "checked": false,
-                        "text": "SupportEscalatedCaseNotification",
-                        "level": 3,
-                        "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.SupportEscalatedCaseNotification",
-                        "select": false
-                    },
-                    {
-                        "leaf": true,
-                        "title": "Post_to_be_Verified_1528746894529",
-                        "checked": false,
-                        "text": "Post_to_be_Verified_1528746894529",
-                        "level": 3,
-                        "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.Post_to_be_Verified_1528746894529",
+                        "id": "EmailTemplate.unfiled$public.Post_review_Rejected",
                         "select": false
                     },
                     {
@@ -14154,6 +14218,36 @@
                     },
                     {
                         "leaf": true,
+                        "title": "SUPPORTSelfServiceNewUserLoginInformationSAMPLE",
+                        "checked": false,
+                        "text": "SUPPORTSelfServiceNewUserLoginInformationSAMPLE",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.SUPPORTSelfServiceNewUserLoginInformationSAMPLE",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
+                        "title": "Post_to_be_Verified_1528746894529",
+                        "checked": false,
+                        "text": "Post_to_be_Verified_1528746894529",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.Post_to_be_Verified_1528746894529",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
+                        "title": "Post_Daily_Notification_List",
+                        "checked": false,
+                        "text": "Post_Daily_Notification_List",
+                        "level": 3,
+                        "isFolder": false,
+                        "id": "EmailTemplate.unfiled$public.Post_Daily_Notification_List",
+                        "select": false
+                    },
+                    {
+                        "leaf": true,
                         "title": "SalesNewCustomerEmail",
                         "checked": false,
                         "text": "SalesNewCustomerEmail",
@@ -14164,22 +14258,12 @@
                     },
                     {
                         "leaf": true,
-                        "title": "Post_Under_Review_Aapproval",
+                        "title": "SupportCaseCreatedPhoneInquiries",
                         "checked": false,
-                        "text": "Post_Under_Review_Aapproval",
+                        "text": "SupportCaseCreatedPhoneInquiries",
                         "level": 3,
                         "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.Post_Under_Review_Aapproval",
-                        "select": false
-                    },
-                    {
-                        "leaf": true,
-                        "title": "SupportCaseResponse",
-                        "checked": false,
-                        "text": "SupportCaseResponse",
-                        "level": 3,
-                        "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.SupportCaseResponse",
+                        "id": "EmailTemplate.unfiled$public.SupportCaseCreatedPhoneInquiries",
                         "select": false
                     },
                     {
@@ -14190,36 +14274,6 @@
                         "level": 3,
                         "isFolder": false,
                         "id": "EmailTemplate.unfiled$public.SupportSelfServiceNewLoginandPassword",
-                        "select": false
-                    },
-                    {
-                        "leaf": true,
-                        "title": "SupportCaseCreatedWebInquiries",
-                        "checked": false,
-                        "text": "SupportCaseCreatedWebInquiries",
-                        "level": 3,
-                        "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.SupportCaseCreatedWebInquiries",
-                        "select": false
-                    },
-                    {
-                        "leaf": true,
-                        "title": "Post_Review_Approved",
-                        "checked": false,
-                        "text": "Post_Review_Approved",
-                        "level": 3,
-                        "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.Post_Review_Approved",
-                        "select": false
-                    },
-                    {
-                        "leaf": true,
-                        "title": "SupportCaseCreatedPhoneInquiries",
-                        "checked": false,
-                        "text": "SupportCaseCreatedPhoneInquiries",
-                        "level": 3,
-                        "isFolder": false,
-                        "id": "EmailTemplate.unfiled$public.SupportCaseCreatedPhoneInquiries",
                         "select": false
                     }
                 ],
@@ -14257,7 +14311,7 @@
                 "id": "Flow.Post_Review_Approval",
                 "lastModifiedById": "005f4000002ZRTbAAO",
                 "lastModifiedByName": "Angel Salas",
-                "lastModifiedDate": "2018-06-26T11:37:00.000Z",
+                "lastModifiedDate": "2018-07-04T20:02:40.000Z",
                 "manageableState": "unmanaged",
                 "type": "Flow",
                 "leaf": true,
@@ -14324,7 +14378,7 @@
                 "id": "FlowDefinition.Post_Review_Approval",
                 "lastModifiedById": "005f4000002ZRTbAAO",
                 "lastModifiedByName": "Angel Salas",
-                "lastModifiedDate": "2018-06-26T11:37:00.000Z",
+                "lastModifiedDate": "2018-07-04T20:02:40.000Z",
                 "manageableState": "unmanaged",
                 "type": "FlowDefinition",
                 "leaf": true,
@@ -16897,13 +16951,13 @@
             {
                 "createdById": "005f4000002ZRTbAAO",
                 "createdByName": "Angel Salas",
-                "createdDate": "2018-07-02T18:28:50.403Z",
+                "createdDate": "2018-07-13T17:40:27.469Z",
                 "fileName": "unpackaged/workflows/CaseComment.workflow",
                 "fullName": "CaseComment",
                 "id": "Workflow.CaseComment",
                 "lastModifiedById": "005f4000002ZRTbAAO",
                 "lastModifiedByName": "Angel Salas",
-                "lastModifiedDate": "2018-07-02T18:28:50.403Z",
+                "lastModifiedDate": "2018-07-13T17:40:27.469Z",
                 "type": "Workflow",
                 "leaf": false,
                 "title": "CaseComment",
@@ -16943,6 +16997,16 @@
                         "title": "alerts",
                         "isFolder": true,
                         "children": [
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Daily_notification_List_Under_Review",
+                                "title": "Daily_notification_List_Under_Review",
+                                "isFolder": false,
+                                "id": "Workflow.Post__c.alerts.Daily_notification_List_Under_Review",
+                                "select": false
+                            },
                             {
                                 "leaf": true,
                                 "checked": false,
@@ -17055,6 +17119,16 @@
                                 "title": "Post Creation Status",
                                 "isFolder": false,
                                 "id": "Workflow.Post__c.rules.Post Creation Status",
+                                "select": false
+                            },
+                            {
+                                "leaf": true,
+                                "checked": false,
+                                "level": 4,
+                                "text": "Post Daily Notification List",
+                                "title": "Post Daily Notification List",
+                                "isFolder": false,
+                                "id": "Workflow.Post__c.rules.Post Daily Notification List",
                                 "select": false
                             }
                         ],

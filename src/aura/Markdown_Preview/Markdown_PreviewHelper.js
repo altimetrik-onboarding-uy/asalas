@@ -9,7 +9,6 @@
 			});
 			action.setCallback(this, function(response) {
 					var state = response.getState();
-					console.log(recordContent);
 					if (state === "SUCCESS") {
 						var recordStatus = response.getReturnValue();
 
@@ -27,5 +26,27 @@
 			});
 				$A.enqueueAction(action);
 		}, 3000);
+	},
+	shortCuts: function(component, event, recordId) {
+		var map = {};
+		onkeydown = onkeyup = function(e){
+			var recordContent = component.find("formTextArea").get("v.value");
+			e = e || event;
+			map[e.key] = e.type == 'keydown';
+
+			if(map["Control"] && map["Shift"] && (map["L"] || map["l"])){
+				e.preventDefault();
+				component.find("formTextArea").set("v.value",recordContent+"``````");
+			}else if(map["Control"] && (map["L"] || map["l"])){
+				e.preventDefault();
+				component.find("formTextArea").set("v.value",recordContent+"``");
+			}else if(map["Control"] && (map["I"] || map["i"])){
+				e.preventDefault();
+				component.find("formTextArea").set("v.value",recordContent+"**");
+			}else if(map["Control"] && (map["B"] || map["b"])){
+				e.preventDefault();
+				component.find("formTextArea").set("v.value",recordContent+"****");
+			}
+		}
 	}
 })

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>Daily_notification_List_Under_Review</fullName>
+        <description>Daily notification of  &quot;Under Review&quot; List</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>admin@txileno.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Post_Daily_Notification_List</template>
+    </alerts>
+    <alerts>
         <fullName>Email_Post_Rejected</fullName>
         <description>Email Post Rejected</description>
         <protected>false</protected>
@@ -96,5 +107,16 @@
         </criteriaItems>
         <description>whenever a post is created, it status will change from draft to Under Review</description>
         <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Post Daily Notification List</fullName>
+        <active>false</active>
+        <criteriaItems>
+            <field>Post__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Under Review</value>
+        </criteriaItems>
+        <description>Email Sent at midnight with the list of post to be reviewed</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
 </Workflow>
