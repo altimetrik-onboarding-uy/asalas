@@ -72,7 +72,7 @@ global class PostEmailNotificationBatch implements Database.Batchable<SObject>, 
       newContent = newContent+'Created By: '+post.CreatedById+'<br />';
     }
     newContent = newContent+postURL+'<br />=====<br /><br />';
-
+    
     return content+newContent;
   }
 }
